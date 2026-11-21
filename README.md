@@ -60,4 +60,4 @@ dsh plugin --profile web add github:vu345/dsh-transfer-export
 | JSON 保真层 | ✅ 完整+schemaVersion | 有（带 schema） | 有 | JSONL |
 | 默认脱敏 | **否**（备份保真） | 是 | 否（flag） | 是 |
 | 落盘 | 集中 `~/.dsh/exports` | `~/.dsh/exports` | 会话 cwd | 指定路径 |
-| 入口 | 命令+标题栏按钮 | 消息操作栏按钮 | 5 条命令 | 命令+工具 |
+| 入口 | 命令+消息操作栏按钮 | 消息操作栏按钮 | 5 条命令 | 命令+工具 |
