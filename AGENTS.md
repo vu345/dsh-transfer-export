@@ -13,7 +13,7 @@
 
 ```powershell
 cd C:\coding\dsh-transfer-export
-npm test        # node --test --test-isolation=none，55 用例，零网络零运行时
+npm test        # node --test（55 用例，零网络零运行时；不用 --test-isolation，Node 20/22 CI 兼容）
 ```
 
 ## 结构

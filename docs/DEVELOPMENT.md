@@ -9,9 +9,11 @@
 
 ```powershell
 cd C:\coding\dsh-transfer-export
-npm test          # node --test --test-isolation=none（55 用例，<1s，零网络）
+npm test          # node --test（55 用例，<1s，零网络；Node 20/22/24 通用，CI 同款）
 npm run test:watch
 ```
+
+> 注意：不要加 `--test-isolation=none`（本地 node 24 支持，但 CI 的 Node 20/22 报 bad option）。
 
 测试全部用 fake ctx + 合成事件，不启动 DSH 运行时；临时目录走 `os.tmpdir()`。
 

@@ -46,8 +46,8 @@
     "node": ">=20"
   },
   "scripts": {
-    "test": "node --test --test-isolation=none",
-    "test:watch": "node --test --test-isolation=none --watch"
+    "test": "node --test",
+    "test:watch": "node --test --watch"
   },
   "keywords": [
     "dsh",
