@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Transfer Export",
+    "description": "Export DSH sessions for backup: JSON fidelity + Markdown readable layers by default, HTML optional; via /transfer-export command or the session header button."
+  }
+}

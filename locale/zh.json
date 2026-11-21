@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "会话备份导出",
+    "description": "把 DSH 会话备份导出为 JSON 保真层 + Markdown 阅读层（HTML 可选）；/transfer-export 命令或标题栏按钮触发。"
+  }
+}

@@ -1,0 +1,11 @@
+# dsh-transfer-export bundle patch
+# 一行 host 插件：/transfer-export 命令 + /dsh-transfer-export RPC 路由（标题栏按钮用）。
+# 浏览器半（lib/client.js）由 DSH Loader 按 dsh.client.platform 约定另行挂载。
+- insert:
+    - id: transfer-export
+      name: dsh-transfer-export
+      config:
+        # 留空 = 默认 $DSH_HOME/exports/dsh-transfer-export（无 DSH_HOME 时 ~/.dsh/...）
+        exportDir: ''
+        # MD/HTML 层工具输出的截断长度（JSON 保真层永不截断）
+        toolTruncateChars: 500

@@ -1,0 +1,63 @@
+{
+  "name": "dsh-transfer-export",
+  "version": "0.1.0",
+  "description": "DSH 会话备份导出：默认 JSON 保真 + Markdown 阅读双层输出，HTML 可选；/transfer-export 命令 + 消息操作栏按钮",
+  "license": "MIT",
+  "author": "vu345",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vu345/dsh-transfer-export.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vu345/dsh-transfer-export/issues"
+  },
+  "homepage": "https://github.com/vu345/dsh-transfer-export#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test --test-isolation=none",
+    "test:watch": "node --test --test-isolation=none --watch"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "session",
+    "export",
+    "backup",
+    "markdown",
+    "json",
+    "html"
+  ]
+}
